@@ -16,6 +16,8 @@
 
   --magenta-100: #ff4dff;
 
+  --green-100: #9DD3AF;
+
   --font-family: 'Poppins', sans-serif;
   
 }
@@ -29,7 +31,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: var(--secundary);
+  background-color: var(--lightBlack);
 }
 
 body {

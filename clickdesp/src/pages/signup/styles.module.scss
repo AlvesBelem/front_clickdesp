@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--lightBlack);
+    background-color: var(--black);
 
     img{
-        width: 15rem;
+        width: 35rem;
         height: auto;
     }
 
@@ -29,11 +29,11 @@
 
    
   
-    h1{
+    h3{
       cursor: pointer;
       margin-top: 1rem;
       font-size: 1.8rem;
-      color: var(--black);
+      color: var(--white);
       padding-bottom: 1rem;
     }
   
