@@ -7,7 +7,7 @@ import { CardPess } from "@/components/UI/CardPess";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Users() {
+export default function Clients() {
   return (
     <Layout>
       <Head>
@@ -19,14 +19,14 @@ export default function Users() {
       <main className={styles.main}>
         <div className={styles.container}>
           <div className={styles.salutation}>
-            <Heading title="Olá! 👨‍💼" subtitle="confira seus Usuários." />
+            <Heading title="Olá! 👨‍💼" subtitle="confira seus Clientes." />
           </div>
           <div className={styles.filter}>
             <span>+</span>
           </div>
         </div>
         <div className={styles.body}>
-          <h1>Usuários cadastrados</h1>
+          <h1>Clientes cadastrados</h1>
           <CardPess name="Marcelo Albero Alves" role="Programador Jr" />
           <CardPess name="Fabio José" role="Programador Sênior" />
           <CardPess name="Fabio José" role="Programador Sênior" />

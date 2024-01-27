@@ -1,10 +1,13 @@
+@import "../../styles/responsive.scss";
+
 .sidebar {
-  background-color: var(--black);
+  background-color: var(--primary);
   padding: 1rem 0;
   max-width: fit-content;
   position: fixed;
   height: 100%;
   z-index: 10;
+  
 }
 
 .image {

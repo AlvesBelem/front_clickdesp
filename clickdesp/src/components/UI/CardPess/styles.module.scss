@@ -1,0 +1,71 @@
+.container {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5rem;
+  background-color: var(--green-100);
+  border-radius: 0.8rem;
+  color: var(--black);
+  margin: 0.5rem;
+  cursor: pointer;
+
+  transition: all .2s;
+
+  &:hover {
+    filter: brightness(1.05);
+    transform: translateX(10px);
+  }
+
+  .name {
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  .role {
+    margin-left: 1rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+
+  .ver {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #a7e9bb;
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+
+  .edit {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #a7e9bb;
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+
+  .del {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #a7e9bb;
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+}

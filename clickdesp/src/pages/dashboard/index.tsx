@@ -5,6 +5,7 @@ import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
 import { Select } from "@/components/UI/Select";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Dashboard() {
