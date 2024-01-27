@@ -7,9 +7,9 @@ import {
   MdShoppingBasket,
   MdHomeRepairService,
   MdOutlineExitToApp,
-  MdCarRepair,
   MdSupervisedUserCircle,
   MdPerson4,
+  MdMoney,
 } from "react-icons/md";
 import Link from "next/link";
 
@@ -18,6 +18,7 @@ const links = [
   { name: "usuários", icon: <MdSupervisedUserCircle />, url: "/users" },
   { name: "clientes", icon: <MdPerson4 />, url: "/clients" },
   { name: "Fornecedores", icon: <MdPerson3 />, url: "/suppliers" },
+  { name: "Financeiro", icon: <MdMoney />, url: "/finance" },
   { name: "produtos", icon: <MdShoppingBasket />, url: "/products" },
   { name: "serviços", icon: <MdHomeRepairService />, url: "/services" },
   { name: "sair", icon: <MdOutlineExitToApp />, url: "/teste" },

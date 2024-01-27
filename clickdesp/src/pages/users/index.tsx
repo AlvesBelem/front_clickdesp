@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '../users/styles.module.scss'
-import Heading from '@/components/Heading'
-import Layout from '@/components/Layout'
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import styles from "../users/styles.module.scss";
+import Heading from "@/components/Heading";
+import Layout from "@/components/Layout";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Users() {
   return (
@@ -17,13 +17,17 @@ export default function Users() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <Heading
-            title='Olá! 👨‍💼'
-            subtitle='confira seus Usuários.'
-          />
+          <div className={styles.salutation}>
+            <Heading title="Olá! 👨‍💼" subtitle="confira seus Usuários." />
+          </div>
+          <div className={styles.filter}>
+            <span>+</span>
+          </div>
         </div>
-        <div className={styles.body}><h1>Usuários</h1></div>
+        <div className={styles.body}>
+          <h1>Usuários</h1>
+        </div>
       </main>
     </Layout>
-  )
+  );
 }

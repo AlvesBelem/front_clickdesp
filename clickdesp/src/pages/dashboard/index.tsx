@@ -3,10 +3,25 @@ import { Inter } from "next/font/google";
 import styles from "./styles.module.scss";
 import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
+import { Select } from "@/components/UI/Select";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Dashboard() {
+  const options = [
+    {
+      value: "01",
+      label: "Marcio",
+    },
+    {
+      value: "02",
+      label: "Marcelo",
+    },
+    {
+      value: "03",
+      label: "Michel",
+    },
+  ];
   return (
     <Layout>
       <Head>
@@ -17,9 +32,16 @@ export default function Dashboard() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <Heading title="Olá 📊" subtitle="confira seu Dashboard." />
+          <div className={styles.salutation}>
+            <Heading title="Olá 📊" subtitle="confira seu Dashboard." />
+          </div>
+          <div className={styles.filter}>
+            <Select options={options} />
+          </div>
         </div>
-        <div className={styles.body}><h1>Dashboard</h1></div>
+        <div className={styles.body}>
+          <h1>Dashboard</h1>
+        </div>
       </main>
     </Layout>
   );

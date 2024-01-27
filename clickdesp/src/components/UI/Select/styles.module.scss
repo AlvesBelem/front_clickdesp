@@ -1,0 +1,14 @@
+.select {
+  max-width: 600px;
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 2px solid var(--green-100);
+  border-radius: 0.8rem;
+  color: var(--black);
+  transition: filter 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+}
